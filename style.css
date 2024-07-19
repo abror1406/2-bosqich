@@ -1,0 +1,139 @@
+html,
+body,
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.-title {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0.8vw;
+    font-size: 5vw;
+    font-weight: bold;
+    user-select: none;
+}
+
+.-subtitle {
+    color: white;
+    font-size: 2vw;
+    font-weight: 100;
+    margin-top: 0;
+    user-select: none;
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100px;
+    height: 110%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.swiper-button-next.active {
+    transition: all 0.2s ease-in;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 110%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.swiper-button-prev{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100px;
+    height: 110%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.swiper-button-prev.active{
+    transition: all 0.2s ease-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 110%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.swiper-button-next:hover {
+    transition: all 0.2s ease-in;
+    background-color: rgba(255, 255, 255, 0.21);
+}
+
+.swiper-button-prev:hover {
+    transition: all 0.2s ease-in;
+    background-color: rgba(255, 255, 255, 0.21);
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-next svg {
+    display: block;
+}
+
+.swiper-button-prev svg {
+    display: block;
+}
+
+.swiper-button-prev:hover svg {
+    transition: all 0.2s ease-in;
+    display: block;
+}
+
+.swiper-button-next:hover svg {
+    transition: all 0.2s ease-in;
+    display: block;
+}
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+    background-color:  orange;
+}
